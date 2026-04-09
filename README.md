@@ -1,6 +1,17 @@
+Code is pretty much AI slop, but it works well. I use this website personally every day to practice LeetCode. 
+
+The best thing about this is that it is on Cloudflare Workers, and each user has their own Durable Object. So it means, i dont have to worry about scaling, it scales for millions of users out of the box.  
+
+The overall stack is,
+Frontend - React, vite etc on CF worker
+Backend main app - Hono on CF worker, with D1 as the main db for auth with better-auth  and leetcode problems list
+Backend for users' data -  it is a durable object per user 
+
+Below is AI slop readme, 
+
 # DSAGym
 
-DSAGym is a DSA practice tracker built around LeetCode ratings and NeetCode lists.
+DSAGym is a DSA practice tracker built around LeetCode ratings and NeetCode lists (not yet implemented).
 You can sign in, set your current rating, filter problems, mark solved questions, and track activity over time.
 
 ## Architecture (quick view)
