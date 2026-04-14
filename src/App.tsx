@@ -697,11 +697,11 @@ function App() {
 
                   const colorForCount = (count: number): string => {
                     if (count <= 0) return 'bg-zinc-300'
-                    if (count === 1) return 'bg-green-100'
-                    if (count === 2) return 'bg-green-200'
-                    if (count === 3) return 'bg-green-300'
-                    if (count === 4) return 'bg-green-500'
-                    if (count === 5) return 'bg-green-700'
+                    if (count === 1) return 'bg-green-400'
+                    if (count === 2) return 'bg-green-500'
+                    if (count === 3) return 'bg-green-600'
+                    if (count === 4) return 'bg-green-700'
+                    if (count === 5) return 'bg-green-800'
                     return 'bg-green-900'
                   }
 
